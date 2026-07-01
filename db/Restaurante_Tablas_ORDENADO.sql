@@ -130,6 +130,7 @@ CREATE TABLE DETALLE_PEDIDO (
         ON DELETE CASCADE,
     CONSTRAINT fk_detalle_pedido_producto
         FOREIGN KEY (id_producto) REFERENCES PRODUCTO(id_producto)
+        ON DELETE CASCADE
 );
 
 -- 10) COMPRA  (depende de SUCURSAL, PROVEEDOR)
